@@ -1,0 +1,1 @@
+This is just a text file for practice of my javascript.

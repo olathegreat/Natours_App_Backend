@@ -1,0 +1,135 @@
+
+[
+    {
+        "id": 1,
+        "productName": "Apple",
+        "image": "🍎",
+        "from": "USA",
+        "nutrient": "Vitamin C, Fiber",
+        "quantity": 10,
+        "price": 2.5,
+        "organic": true,
+        "description": "A crisp and juicy red apple, known for its refreshing sweetness. This apple is perfect for a quick snack, adding to salads, or baking into a delicious pie. Rich in fiber and vitamin C, it supports a healthy immune system and aids digestion. Enjoy it as is, or pair it with cheese for a delightful treat. Whether you prefer a tangy bite or a sweeter taste, this apple will not disappoint. It's a versatile fruit that's a staple in any kitchen."
+    },
+    {
+        "id": 2,
+        "productName": "Banana",
+        "image": "🍌",
+        "from": "Ecuador",
+        "nutrient": "Potassium, Vitamin B6",
+        "quantity": 12,
+        "price": 1.2,
+        "organic": true,
+        "description": "A sweet and soft banana, ideal for boosting energy throughout the day. Bananas are a great source of potassium, essential for heart health and maintaining proper blood pressure levels. This fruit is also rich in vitamin B6, which plays a crucial role in brain health. Enjoy it on its own, sliced into cereal, or blended into smoothies. It's perfect for those on-the-go moments or as a post-workout snack. This versatile fruit is loved by kids and adults alike."
+    },
+    {
+        "id": 3,
+        "productName": "Orange",
+        "image": "🍊",
+        "from": "Spain",
+        "nutrient": "Vitamin C, Fiber",
+        "quantity": 15,
+        "price": 3.0,
+        "organic": false,
+        "description": "A juicy and tangy orange that bursts with flavor and nutrients. Oranges are renowned for their high vitamin C content, which supports immune function and skin health. This fruit is perfect for juicing, adding to salads, or simply enjoying as a refreshing snack. The vibrant color and zesty aroma make it a favorite during the citrus season. It's also packed with fiber, aiding digestion and promoting a healthy gut. Savor the taste of sunshine with every bite of this delicious fruit."
+    },
+    {
+        "id": 4,
+        "productName": "Strawberry",
+        "image": "🍓",
+        "from": "USA",
+        "nutrient": "Vitamin C, Manganese",
+        "quantity": 8,
+        "price": 4.5,
+        "organic": true,
+        "description": "A sweet and tangy strawberry, perfect for adding a burst of flavor to any dish. Strawberries are rich in antioxidants, particularly vitamin C, which helps protect the body from harmful free radicals. These berries are also a good source of manganese, important for bone health and metabolism. Enjoy them fresh, in desserts, or blended into a smoothie. Their vibrant red color and juicy texture make them a favorite in salads and as a topping for yogurt. Indulge in the sweet taste of summer with these delectable berries."
+    },
+    {
+        "id": 5,
+        "productName": "Grapes",
+        "image": "🍇",
+        "from": "Italy",
+        "nutrient": "Vitamin K, Potassium",
+        "quantity": 20,
+        "price": 3.8,
+        "organic": false,
+        "description": "Juicy and sweet grapes, perfect for snacking or adding to a cheese platter. Grapes are a good source of vitamin K, which plays a vital role in blood clotting and bone health. They also contain potassium, essential for heart health and maintaining fluid balance in the body. These grapes are delicious eaten fresh, added to salads, or used in desserts. Their sweet flavor and crisp texture make them a favorite for all ages. Whether you enjoy them on their own or as part of a dish, grapes are a delightful and healthy treat."
+    },
+    {
+        "id": 6,
+        "productName": "Pineapple",
+        "image": "🍍",
+        "from": "Costa Rica",
+        "nutrient": "Vitamin C, Manganese",
+        "quantity": 5,
+        "price": 3.5,
+        "organic": true,
+        "description": "A tropical and juicy pineapple, offering a taste of paradise with every bite. Pineapples are rich in vitamin C, which boosts the immune system and promotes healthy skin. They are also a great source of manganese, important for bone health and metabolism. This fruit is perfect for adding to smoothies, grilling, or enjoying fresh. Its sweet and tangy flavor makes it a versatile ingredient in both sweet and savory dishes. Pineapples are not only delicious but also packed with nutrients that benefit your overall health."
+    },
+    {
+        "id": 7,
+        "productName": "Watermelon",
+        "image": "🍉",
+        "from": "Mexico",
+        "nutrient": "Vitamin A, Vitamin C",
+        "quantity": 3,
+        "price": 6.0,
+        "organic": false,
+        "description": "A refreshing and sweet watermelon, perfect for hot summer days. Watermelons are hydrating and packed with vitamins A and C, which support eye health and boost the immune system. This fruit is ideal for enjoying on its own, in fruit salads, or blended into a cooling drink. The juicy texture and vibrant color make it a favorite at picnics and barbecues. Not only is watermelon delicious, but it's also low in calories, making it a guilt-free treat. Enjoy the crisp and refreshing taste of this summertime favorite."
+    },
+    {
+        "id": 8,
+        "productName": "Mango",
+        "image": "🥭",
+        "from": "India",
+        "nutrient": "Vitamin A, Vitamin C",
+        "quantity": 7,
+        "price": 2.8,
+        "organic": true,
+        "description": "A juicy and sweet mango, known for its rich flavor and vibrant color. Mangos are high in vitamins A and C, which are important for eye health, immune function, and skin health. This tropical fruit is perfect for enjoying fresh, in smoothies, or as a topping for desserts. Its sweet and succulent taste makes it a favorite in many cultures. Mangos are not only delicious but also packed with antioxidants that protect the body from oxidative stress. Indulge in the tropical goodness of this versatile fruit."
+    },
+    {
+        "id": 9,
+        "productName": "Cherry",
+        "image": "🍒",
+        "from": "Turkey",
+        "nutrient": "Vitamin C, Potassium",
+        "quantity": 15,
+        "price": 4.2,
+        "organic": false,
+        "description": "Sweet and tart cherries, perfect for adding a burst of flavor to any dish. Cherries are rich in antioxidants, particularly vitamin C, which supports immune health and skin vitality. They are also a good source of potassium, essential for heart health and muscle function. Enjoy them fresh, in pies, or as a topping for desserts. Their vibrant color and juicy texture make them a favorite in summer salads. Cherries are not only delicious but also packed with nutrients that promote overall well-being."
+    },
+    {
+        "id": 10,
+        "productName": "Peach",
+        "image": "🍑",
+        "from": "USA",
+        "nutrient": "Vitamin C, Vitamin A",
+        "quantity": 9,
+        "price": 3.2,
+        "organic": true,
+        "description": "A juicy and sweet peach, offering a taste of summer in every bite. Peaches are high in vitamins A and C, which are important for skin health, immune function, and eye health. This fruit is perfect for enjoying fresh, in salads, or baked into a delicious cobbler. Its sweet and fragrant flavor makes it a favorite in many desserts. Peaches are not only delicious but also packed with fiber, promoting healthy digestion. Enjoy the natural sweetness of this versatile and nutritious fruit."
+    },
+    {
+        "id": 11,
+        "productName": "Lemon",
+        "image": "🍋",
+        "from": "Italy",
+        "nutrient": "Vitamin C, Potassium",
+        "quantity": 12,
+        "price": 1.5,
+        "organic": true,
+        "description": "A tart and juicy lemon, perfect for adding a burst of flavor to any dish. Lemons are renowned for their high vitamin C content, which supports immune function and skin health. This citrus fruit is ideal for juicing, adding to salads, or as a garnish for drinks. The bright yellow color and zesty aroma make it a favorite in kitchens worldwide. Lemons are not only delicious but also packed with antioxidants that protect the body from harmful free radicals. Whether used in cooking or baking, lemons add a refreshing tang to any recipe."
+    },
+    {
+        "id": 12,
+        "productName": "Pear",
+        "image": "🍐",
+        "from": "Argentina",
+        "nutrient": "Fiber, Vitamin C",
+        "quantity": 10,
+        "price": 2.3,
+        "organic": false,
+        "description": "A sweet and juicy pear, known for its smooth texture and subtle flavor. Pears are a great source of"
+    }
+]

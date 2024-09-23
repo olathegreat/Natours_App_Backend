@@ -1,0 +1,2 @@
+This is a new text This is just a text file for practice of my javascript. .
+ Next line

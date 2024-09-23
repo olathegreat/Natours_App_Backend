@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{%PRODUCTNAME%} {%PRODUCTIMAGE%}</title>
+  
+    <style>
+    .not-organic {
+        display: none;
+    }
+    </style>
+</head>
+
+  
+  <body>
+    <div class="overall-container">
+
+        <div class="product_organic {%NOTORGANIC%}">
+            <h5>Organic</h5>
+
+        </div>
+        <a href="/overview" class="product_back">
+            <span class="emoji-left" >
+                👈
+
+            </span>
+
+        </a>
+
+        <div class="product_hero">
+            <span class="product-emoji product-emoji-1">{%PRODUCTIMAGE%}</span>
+            <span class="product-emoji product-emoji-2">{%PRODUCTIMAGE%}</span>
+            <span class="product-emoji product-emoji-3">{%PRODUCTIMAGE%}</span>
+            <span class="product-emoji product-emoji-4">{%PRODUCTIMAGE%}</span>
+            <span class="product-emoji product-emoji-5">{%PRODUCTIMAGE%}</span>
+            <span class="product-emoji product-emoji-6">{%PRODUCTIMAGE%}</span>
+            <span class="product-emoji product-emoji-7">{%PRODUCTIMAGE%}</span>
+            <span class="product-emoji product-emoji-8">{%PRODUCTIMAGE%}</span>
+            <span class="product-emoji product-emoji-9">{%PRODUCTIMAGE%}</span>
+
+        </div>
+      <div class="desc-card">
+        <h2 class="product_name">{%PRODUCTNAME%}</h2>
+
+        <div class="product_details">
+          <p>
+            <span class="emoji_left">🌍</span>
+            From {%FROM%}
+          </p>
+          <p>
+            <span class="emoji_left">💚</span>
+            {%NUTRIENT%}
+          </p>
+          <p>
+            <span class="emoji_left">📦</span>
+            {%QUANTITY%}
+          </p>
+          <p>
+            <span class="emoji_left">💳</span>
+            ${%PRICE%}
+          </p>
+        </div>
+
+        <a href="" target="_blank">
+            <span class="emoji-left">🛒</span>
+            <span>Add to cart</span>
+        </a>
+
+        <p class="product-description">
+            {%DESCRIPTION%}
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
