@@ -15,6 +15,19 @@ const signToken = (id) => {
 
 const createSendToken = (user, statusCode, res) => {
   const token = signToken(user._id);
+
+  const cookieOptions = {
+    expires: new Date(
+      Date.now() + process.env.JWT_COOKIE_EXPIRES * 24 * 60 * 60 * 1000
+    ),
+    httpOnly: true,
+  };    
+  if (process.env.NODE_ENV === 'production') cookieOptions.secure = true;   
+
+  user.password = undefined;    
+
+  res.cookie('jwt', token, cookieOptions);  
+  
   
   res.status(statusCode).json({
     status: 'success',
@@ -39,15 +52,17 @@ exports.signup = catchAsync(async (req, res, next) => {
     photo: req.body.photo,
   });
 
-  const token = signToken(newUser._id);
+  createSendToken(newUser, 201, res);
 
-  res.status(201).json({
-    status: 'success',
-    token,
-    data: {
-      user: newUser,
-    },
-  });
+//   const token = signToken(newUser._id);
+
+//   res.status(201).json({
+//     status: 'success',
+//     token,
+//     data: {
+//       user: newUser,
+//     },
+//   });
 });
 
 exports.login = catchAsync(async (req, res, next) => {
@@ -66,12 +81,13 @@ exports.login = catchAsync(async (req, res, next) => {
   }
 
   // 3) if everything is ok, send token to client
-  const token = signToken(user._id);
+  createSendToken(user, 200, res);
+//   const token = signToken(user._id);
 
-  res.status(200).json({
-    status: 'success',
-    token,
-  });
+//   res.status(200).json({
+//     status: 'success',
+//     token,
+//   });
 });
 
 exports.protect = catchAsync(async (req, res, next) => {
