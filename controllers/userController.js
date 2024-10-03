@@ -1,26 +1,34 @@
 const User = require('../models/userModel');
 const catchAsync = require('../utils/catchAsync');
+const factory = require('./handlerFactory')
 
 
-exports.getAllUsers = catchAsync( async (req, res, next) => {
- const users = await User.find();
+exports.getAllUsers = factory.getAll(User);
+//  catchAsync( async (req, res, next) => {
+//  const users = await User.find();
 
 
- res.status(200).json({
-  status: 'success',
-  results: users.length,
-  data: {
-    users,
-  },
- });
-});
+//  res.status(200).json({
+//   status: 'success',
+//   results: users.length,
+//   data: {
+//     users,
+//   },
+//  });
+// });
 
-exports.getUserById = (req, res) => {
-  res.status(500).json({
-    status: 'error',
-    message: 'Not implemented yet',
-  });
-};
+exports.getMe = (req, res, next) => {
+  req.params.id = req.user.id;
+  next();
+};  
+
+exports.getUserById = factory.getOne(User);
+// (req, res) => {
+//   res.status(500).json({
+//     status: 'error',
+//     message: 'Not implemented yet',
+//   });
+// };
 
 exports.createUsers = (req, res) => {
   res.status(500).json({
@@ -29,19 +37,21 @@ exports.createUsers = (req, res) => {
   });
 };
 
-exports.updateUserById = (req, res) => {
-  res.status(500).json({
-    status: 'error',
-    message: 'Not implemented yet',
-  });
-};
+exports.updateUserById = factory.updateOne(User);
+// (req, res) => {
+//   res.status(500).json({
+//     status: 'error',
+//     message: 'Not implemented yet, use /signup instead',
+//   });
+// };
 
-exports.deleteUserById = (req, res) => {
-  res.status(500).json({
-    status: 'error',
-    message: 'Not implemented yet',
-  });
-};
+exports.deleteUserById = factory.deleteOne(User);
+// (req, res) => {
+//   res.status(500).json({
+//     status: 'error',
+//     message: 'Not implemented yet',
+//   });
+// };
 
 const filterObj = (obj, ...allowedFields) => {
   const newObj = {};

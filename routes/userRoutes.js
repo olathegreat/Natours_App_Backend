@@ -25,5 +25,7 @@ router
   .put(userController.updateUserById)
   .delete(userController.deleteUserById);
 
+router.get('/me', authController.protect,userController.getMe, userController.getUserById);
+
 
 module.exports = router;

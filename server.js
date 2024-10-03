@@ -1,4 +1,5 @@
 const dotenv = require('dotenv');
+const importData = require('./dev-data/data/import-dev-data');
 
 dotenv.config({ path: './config.env' });
 

@@ -1,6 +1,9 @@
 const fs = require('fs');
 const dotenv = require('dotenv');
 const Tours = require('../../models/tourModel');
+const Users = require('../../models/userModel');
+const Reviews = require('../../models/reviewModel');
+
 
 dotenv.config({ path: './config.env' });
 const mongoose = require('mongoose');
@@ -24,6 +27,8 @@ const tours = JSON.parse(fs.readFileSync(`${__dirname}/tours.json`, 'utf-8'));
 const importData = async () => {
     try{
         await Tours.create(tours);
+        await Users.create(Users);
+        await Reviews.create(Reviews);
 
     }catch(err){
         console.log(err);
@@ -37,6 +42,8 @@ const importData = async () => {
 const deleteData = async () => {
     try{
         await Tours.deleteMany();
+        await Users.deleteMany();
+        await Reviews.deleteMany();
     }catch(err){
         console.log(err);
 
@@ -49,3 +56,5 @@ if(process.argv[2] === 'delete')   {
 } else if(process.argv[2] === 'import') {
     importData()
 }
+
+
